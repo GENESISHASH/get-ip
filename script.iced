@@ -29,7 +29,7 @@ if perform
 
   if ip_addr
   	ip_addr = ip_addr.trim()
-  	_.writes(file_time,_.time())
+  	_.writes(file_time,_.time().toString())
   	_.writes(file_ip,ip_addr.trim())
 else
   ip_addr = last_ip
