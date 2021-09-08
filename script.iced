@@ -6,7 +6,7 @@ HTTP_ENDPOINT = "https://checkip.amazonaws.com/"
 perform = false
 
 if !_.exists(file_time = __dirname + '/.last-time')
-  _.writes(file_time,_.time())
+  _.writes(file_time,_.time().toString())
   last_time = 0
 else
   last_time = +(_.reads file_time)
